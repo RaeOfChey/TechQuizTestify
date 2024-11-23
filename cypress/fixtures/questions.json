@@ -1,0 +1,14 @@
+[
+  { 
+    "id": 1, 
+    "question": "What is React?", 
+    "answers": ["A library", "A framework"], 
+    "correctAnswer": "A library" 
+  },
+  { 
+    "id": 2, 
+    "question": "What does MERN stand for?", 
+    "answers": ["Mongo, Express, React, Node", "MySQL, Express, React, Node"], 
+    "correctAnswer": "Mongo, Express, React, Node" 
+  }
+]
