@@ -24,7 +24,7 @@
         "@cypress/webpack-preprocessor": "^6.0.2",
         "@testing-library/cypress": "^10.0.2",
         "@types/react": "^18.3.12",
-        "@vitejs/plugin-react": "^4.3.1",
+        "@vitejs/plugin-react": "^4.3.3",
         "concurrently": "^8.2.2",
         "cypress": "^13.16.0",
         "nodemon": "^3.1.3",

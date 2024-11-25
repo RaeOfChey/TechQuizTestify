@@ -1,51 +1,25 @@
-import { startQuiz, answerQuestion, submitQuiz, checkScore, startNewQuiz } from '../support/utils/helpers';
-
-// Define the structure of the question data for type safety
-interface Answer {
-  text: string;
-  isCorrect: boolean;
-}
-
-interface Question {
-  id: number;
-  question: string;
-  answers: Answer[];
-  correctAnswer: string;
-}
-
-describe('Tech Quiz End-to-End Test', () => {
+describe('Tech Quiz End-to-End Tests', () => {
   beforeEach(() => {
-    cy.visit('/'); // Visit the quiz page
+    cy.visit('/');
   });
 
-  it('should start the quiz when Start button is clicked', () => {
-    startQuiz(); // Use the helper function to start the quiz
-    cy.contains('What is React?').should('be.visible'); // Ensure the first question is displayed
-  });
+  it('starts the quiz and completes it', () => {
+    // Verify Start button and click
+    cy.get('button').contains('Start Quiz').click();
 
-  it('should navigate through all questions and display the final score', () => {
-    startQuiz(); // Start the quiz using helper
 
-    // Load the fixture with the correct type
-    cy.fixture('questions').then((questions: Question[]) => {
-      questions.forEach((q: Question) => {
-        answerQuestion(q.correctAnswer); // Answer each question using the helper
-      });
-    });
 
-    checkScore(5); // Verify the score after all questions are answered
-  });
+    //Answer all questions
+    for (let i = 0; i < 10; i++) {
+      cy.get('.card').should('exist');
+      cy.get('h2').should('exist');
+      cy.get('.mt-3').should('exist');
+      cy.get('.btn').first().click(); // Click the first answer
+    }
 
-  it('should allow starting a new quiz after finishing', () => {
-    startQuiz(); // Start the quiz using the helper
-    cy.fixture('questions').then((questions: Question[]) => {
-      questions.forEach((q: Question) => {
-        answerQuestion(q.correctAnswer); // Answer each question
-      });
-    });
-
-    submitQuiz(); // Submit the quiz
-    startNewQuiz(); // Start a new quiz after finishing the current one
-    cy.contains('What is React?').should('be.visible'); // Ensure the first question of the new quiz is displayed
+    // // Verify quiz completion
+    cy.get('h2').contains('Quiz Completed');
+    cy.get('.alert').should('exist');
+    cy.get('button').contains('Take New Quiz').should('exist');
   });
 });

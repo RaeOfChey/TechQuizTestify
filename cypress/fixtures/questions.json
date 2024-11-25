@@ -1,18 +1,92 @@
 [
-  { 
-    "id": 1, 
-    "question": "What is React?", 
+  {
+    "question": "What is React primarily used for?",
     "answers": [
-      { "text": "A library", "isCorrect": true }, 
-      { "text": "A framework", "isCorrect": false }
+      { "text": "Building user interfaces", "isCorrect": true },
+      { "text": "Data storage", "isCorrect": false },
+      { "text": "Server-side rendering", "isCorrect": false },
+      { "text": "Database management", "isCorrect": false }
     ]
   },
-  { 
-    "id": 2, 
-    "question": "What does MERN stand for?", 
+  {
+    "question": "Which of these is a key feature of React?",
     "answers": [
-      { "text": "Mongo, Express, React, Node", "isCorrect": true }, 
-      { "text": "MySQL, Express, React, Node", "isCorrect": false }
+      { "text": "Virtual DOM", "isCorrect": true },
+      { "text": "Real DOM manipulation", "isCorrect": false },
+      { "text": "Two-way data binding", "isCorrect": false },
+      { "text": "Model-View-Controller (MVC)", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What does JSX stand for?",
+    "answers": [
+      { "text": "JavaScript XML", "isCorrect": true },
+      { "text": "JavaScript Extra", "isCorrect": false },
+      { "text": "Java Simple Extension", "isCorrect": false },
+      { "text": "JSON Extended", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is a key advantage of React hooks?",
+    "answers": [
+      { "text": "Allowing functional components to use state", "isCorrect": true },
+      { "text": "Automatically fixing syntax errors", "isCorrect": false },
+      { "text": "Rendering server-side applications", "isCorrect": false },
+      { "text": "Making components class-based", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which method is used to update state in a React class component?",
+    "answers": [
+      { "text": "setState()", "isCorrect": true },
+      { "text": "updateState()", "isCorrect": false },
+      { "text": "changeState()", "isCorrect": false },
+      { "text": "modifyState()", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What does the useEffect hook do?",
+    "answers": [
+      { "text": "Runs side effects in a functional component", "isCorrect": true },
+      { "text": "Sets up a local state", "isCorrect": false },
+      { "text": "Provides a way to define CSS styles", "isCorrect": false },
+      { "text": "Renders a component to the DOM", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the main role of Redux in React applications?",
+    "answers": [
+      { "text": "Managing global state", "isCorrect": true },
+      { "text": "Rendering components", "isCorrect": false },
+      { "text": "Styling components", "isCorrect": false },
+      { "text": "Connecting to a database", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What does the React `key` prop help with?",
+    "answers": [
+      { "text": "Identifying elements for efficient rendering", "isCorrect": true },
+      { "text": "Providing accessibility to elements", "isCorrect": false },
+      { "text": "Defining inline styles for elements", "isCorrect": false },
+      { "text": "Assigning a unique ID to a component", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What command is used to create a new React application?",
+    "answers": [
+      { "text": "npx create-react-app my-app", "isCorrect": true },
+      { "text": "npm init react-app my-app", "isCorrect": false },
+      { "text": "create-react my-app", "isCorrect": false },
+      { "text": "npm start react-app", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of PropTypes in React?",
+    "answers": [
+      { "text": "Validating the types of props passed to a component", "isCorrect": true },
+      { "text": "Providing default values for props", "isCorrect": false },
+      { "text": "Creating custom hooks", "isCorrect": false },
+      { "text": "Fetching data from APIs", "isCorrect": false }
     ]
   }
 ]
