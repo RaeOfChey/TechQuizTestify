@@ -9,12 +9,13 @@
 2. [Features](#features)
 3. [Installation](#installation)
 4. [Usage](#usage)
-5. [Tools and Technologies](#tools-and-technologies)
-6. [Dependencies and Installs](#dependencies-and-installs)
-7. [License](#license)
-8. [Contributing](#contributing)
-9. [Tests](#tests)
-10. [Questions](#questions)
+5. [Walkthrough](#walkthrough)
+6. [Tools and Technologies](#tools-and-technologies)
+7. [Dependencies and Installs](#dependencies-and-installs)
+8. [License](#license)
+9. [Contributing](#contributing)
+10. [Tests](#tests)
+11. [Questions](#questions)
 
 ## Description
 TechQuizTestify is a MERN stack application that delivers a dynamic, quiz-taking experience for aspiring developers. Users can test their tech knowledge by answering randomized questions, receive a score, and start new quizzes. Cypress has been integrated to ensure robust component and end-to-end test coverage.
@@ -42,6 +43,9 @@ Users can navigate to the browser to take the quiz:
 - Answer Questions: Respond to each question as they appear.
 - View Score: Review your score after completing all questions.
 - Restart Quiz: Begin a new quiz session after completion.
+
+## Walkthrough
+A complete walkthrough video demonstrating the application, its functionality, and the process of invoking it from the command line can be found at the following link: https://drive.google.com/file/d/1FbiWMFAtCyR2_u4YwtChClbhrKEgRhHa/view?usp=sharing
 
 ## Tools and Technologies
 **Programming Language**:
